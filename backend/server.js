@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/ecommerce', {
+mongoose.connect('mongodb+srv://user:123456m@cluster0.wyixd.mongodb.net/ecommerce?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
